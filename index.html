@@ -13,11 +13,18 @@
       
       
     }
-
+    .encabezado{
+      background: linear-gradient(to bottom, #c690d7, #ffffff);
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
     h1 {
-      color: #333;
-      background-image: url("verge.png");
-      height: 199px;
+      color: #7030a0;
+      text-align: center;
+      
     }
     h2{
       color:#fff; 
@@ -31,9 +38,10 @@
       font-weight: normal;
     }
     footer {
-      background-image: url("foot_verge.png");
-      height: 200px;
+         height: 200px;
       border-left:60px;
+      background-repeat: no-repeat;
+      text-align: center;
     }
     ul {
       list-style: none;
@@ -89,10 +97,21 @@ table{
   .card h3 {
     margin-top: 20px;
   }
+  .pequeña{
+    width: 5%;
+    justify-content: center;
+  }
   </style>
 </head>
 <body>
-  <h1></h1>
+
+<div class="encabezado">
+  <h1>
+    AI-powered eVolution towards oPEn and secuRe edGe architectures
+    <br>
+  </h1>
+  <image src="logo_VERGE_pequeño.png"></image>
+  </div>
   <div class="titulo-barras">
     <hr>
       <h2>VERGE OPEN DATASPACE</h2>
@@ -168,6 +187,7 @@ table{
 </table>
     
   <footer>
+    <image src="foot_verge.png" ></image>
 
   </footer>
 </body>
