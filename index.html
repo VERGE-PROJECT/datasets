@@ -101,6 +101,51 @@ table{
     width: 5%;
     justify-content: center;
   }
+
+    .dropdown-container {
+            position: relative; /* Es importante para posicionar la descripción */
+            display: inline-block; /* Para que el contenedor se ajuste al contenido */
+        }
+
+        .dropdown-link {
+            color: #fbfbfc;
+            text-decoration: none;
+                  
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-link:hover {
+            background-color: #fbfbfc;
+            color: white;
+        }
+
+        .dropdown-description {
+            visibility: hidden; /* Oculta la descripción por defecto */
+            opacity: 0; /* Para una transición de opacidad */
+            position: absolute;
+            top: 100%; /* Posiciona la descripción debajo del enlace */
+            left: 50%; /* Centra la descripción horizontalmente */
+            transform: translateX(-50%); /* Ajuste para centrar */
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            min-width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 10; /* Asegura que la descripción esté por encima de otros elementos */
+            transition: visibility 0s, opacity 0.3s ease; /* Transición para mostrar/ocultar */
+            margin-top: 5px; /* Espacio entre el enlace y la descripción */
+            white-space: normal; /* Permite que el texto se ajuste */
+            font-size: 15px;
+        }
+
+        /* Cuando el ratón pasa por el contenedor, muestra la descripción */
+        .dropdown-container:hover .dropdown-description {
+            visibility: visible;
+            opacity: 1;
+            transition-delay: 0.1s; /* Pequeño retraso para que la transición sea más suave */
+        }
   </style>
 </head>
 <body>
@@ -121,70 +166,86 @@ table{
 <table>
   <tr>
   <th>
-  
+  <div class="dropdown-container">
+    <a href="https://github.com/VERGE-PROJECT/Real-5G-Network-Dataset" class="card-link dropdown-link" >
+     <div class="card">
+      <img src="real5g.jpg" alt="Real 5G Network Dataset" width="200" height="300">
+      <h3>Real 5G Network Dataset</h3>
+      <div class="dropdown-description">
+      This dataset contains real-time performance metrics from a live 5G network, including KPIs like signal strength, bandwidth, latency, and node reliability.
+    </div></a>
+  </div></div>
+  </th>
+  <th>
+  <div class="dropdown-container">
+  <a href="https://github.com/VERGE-PROJECT/GTSI-HITACHI-ODT-dataset" class="card-link dropdown-link" >
   <div class="card">
-    <img src="real5g.jpg" alt="Real 5G Network Dataset">
-    <h3>Real 5G Network Dataset</h3>
-    <h4>This dataset contains real-time performance metrics from a live 5G network, including KPIs like signal strength, bandwidth, latency, and node reliability.</h4>
-    
+    <img src="tram_obstacle2.jpg" alt="Obstacle Detection System Dataset" width="200" height="300">
+    <h3>Obstacle Detection System Dataset</h3>
+    <div class="dropdown-description">
+      This dataset contains data from the obstacle detection system of a tram operating in Florence tramway system equipped with RADAR and LiDAR sensors. The system processes data from these sensors with many complex algorithms to detect and track position and trajectory of many objects standing still or moving in front of tram.    
+    </div></a>
+    </div>
   </div>
   </th>
   <th>
-  
-  <a href="https://github.com/VERGE-PROJECT/GTSI-HITACHI-ODT-dataset" class="card-link">
-  <div class="card">
-    <img src="tram_obstacle.jpg" alt="Obstacle Detection System Dataset">
-    <h3>Obstacle Detection System Dataset</h3></a>
-    <h4>This dataset contains data from the obstacle detection system of a tram operating in Florence tramway system equipped with RADAR and LiDAR sensors. The system processes data from these sensors with many complex algorithms to detect and track position and trajectory of many objects standing still or moving in front of tram.</h4>
-  </div>
+  <div class="dropdown-container">
+    <a href="https://github.com/VERGE-PROJECT/GTSI-HITACHI-NGAP-dataset" class="card-link dropdown-link" >
+    <div class="card">
+      <img src="tram_5g.jpg" alt=">Tram's Positioning Dataset" width="300" height="300">
+      <h3>Tram's Positioning Dataset</h3>
+      <div class="dropdown-description">
+        This dataset contains data from the positioning system of a tram operating in Florence tramway system equipped with a set of sensors (RADAR, inertial measurement unit and GNSS). The system processes sensor data through fusion algorithms and determines the relevant tram position.
+      </div></a>
+    </div></div>
   </th>
   <th>
-  <a href="https://github.com/VERGE-PROJECT/GTSI-HITACHI-NGAP-dataset" class="card-link">
+    <div class="dropdown-container">
+  <a href="https://github.com/VERGE-PROJECT/Space-Time-User-Distribution-Dataset" class="card-link dropdown-link">
   <div class="card">
-    <img src="tram_5g.jpg" alt=">Tram's Positioning Dataset">
-    <h3>Tram's Positioning Dataset</h3></a>
-    <h4>This dataset contains data from the positioning system of a tram operating in Florence tramway system equipped with a set of sensors (RADAR, inertial measurement unit and GNSS). The system processes sensor data through fusion algorithms and determines the relevant tram position.</h4>
-  </div>
-  </th>
-  <th>
-  <a href="https://github.com/VERGE-PROJECT/Space-Time-User-Distribution-Dataset" class="card-link">
-  <div class="card">
-    <img src="space_time.jpg" alt="Space/Time User Distribution Dataset">
+    <img src="space_time.jpg" alt="Space/Time User Distribution Dataset" width="200" height="300">
     <h3>Space/Time User Distribution Dataset</h3></a>
-    <h4>This dataset contains measurements of the number of users connected to the Wifi indoor Access Points (APs) deployed in the Campus Nord of UPC in Barcelona. Measurements are given as a function of time covering a total of 62 days. The dataset also includes the information of the theoretical coverage area of each AP, so that the number of users connected to an AP can be associated to a specific geographical area, thus having the user distribution in time and space.</h4>
-    <br><br><br>
-  </div>
+    <div class="dropdown-description">
+      This dataset contains measurements of the number of users connected to the Wifi indoor Access Points (APs) deployed in the Campus Nord of UPC in Barcelona. Measurements are given as a function of time covering a total of 62 days. The dataset also includes the information of the theoretical coverage area of each AP, so that the number of users connected to an AP can be associated to a specific geographical area, thus having the user distribution in time and space.
+    </div></a>
+    </div></div>
   </th>
   <th>
-  <a href="https://github.com/VERGE-PROJECT/PCDataset" class="card-link">
-  <div class="card">
-    <img src="realtime video.jpg" alt="Real Time Video Dataset">
-    <h3>Real Time Video Dataset </h3></a>
-    <h4>This dataset includes the point cloud of a 3D avatar. The point cloud, produced from FM POINTS, encapsulates the complete Augmented Reality (AR) landscape and written in a PLY file. Originating from a densely packed data set of more than 30,000 individual points, it's subjected to a process of downsampling, wherein it is reduced to a manageable subset of 2,048 distinct points without significantly compromising the overall visual and data integrity of the AR scenery. The ground truth label is represented as the skeleton points of the avatar, which are written into a JSON file. Each skeleton has its own attribute information, including skeleton identification, position, rotation, color, and index number. To ensure effective communication, we use 25 skeletons to represent the avatar we use.</h4>
-  </div>
-  </th>
+  <div class="dropdown-container">
+    <a href="https://github.com/VERGE-PROJECT/PCDataset" class="card-link dropdown-link">
+    <div class="card">
+      <img src="realtime video.jpg" alt="Real Time Video Dataset" width="200" height="300">
+      <h3>Real Time Video Dataset </h3></a>
+      <div class="dropdown-description">
+        This dataset includes the point cloud of a 3D avatar. The point cloud, produced from FM POINTS, encapsulates the complete Augmented Reality (AR) landscape and written in a PLY file. Originating from a densely packed data set of more than 30,000 individual points, it's subjected to a process of downsampling, wherein it is reduced to a manageable subset of 2,048 distinct points without significantly compromising the overall visual and data integrity of the AR scenery. The ground truth label is represented as the skeleton points of the avatar, which are written into a JSON file. Each skeleton has its own attribute information, including skeleton identification, position, rotation, color, and index number. To ensure effective communication, we use 25 skeletons to represent the avatar we use.
+      </div></a>
+  </div></div>
+</th>
 </tr>
 <tr>
   
   <th>
-  <a href="https://github.com/VERGE-PROJECT/OAI_RAN_KPM_dataset" class="card-link">
-  <div class="card">
-    <img src="ran_metrics.png" alt="RAN Dataset">
-    <h3>RAN Dataset</h3></a>
-    <h4>This dataset contains Radio Access Network (RAN) metrics in a 5G emulation environment based on OpenAirInterface (OAI). It includes 
-      time-series measurements representing network behavior over 5 weeks (~10,080 samples)</h4>
-  </div>
+  <div class="dropdown-container">
+    <a href="https://github.com/VERGE-PROJECT/OAI_RAN_KPM_dataset" class="card-link dropdown-link">
+    <div class="card">
+      <img src="ran_metrics.png" alt="RAN Dataset" width="200" height="300">
+      <h3>RAN Dataset</h3></a>
+      <div class="dropdown-description">
+        This dataset contains Radio Access Network (RAN) metrics in a 5G emulation environment based on OpenAirInterface (OAI). It includes 
+      time-series measurements representing network behavior over 5 weeks (~10,080 samples)
+      </div></a>
+  </div></div>
   </th>
   <th>
   
   <div class="card">
-    <img src="deployed_slicing_tstbed.jpg" alt="Deployed Slicing Testbed Dataset">
+    <img src="deployed_slicing_tstbed.jpg" alt="Deployed Slicing Testbed Dataset"width="200" height="300">
     <h3>Deployed Slicing Testbed Dataset</h3>
   </div>
   </th>
   <th>
   <div class="card">
-    <img src="ai-generated-8540921_1280.jpg" alt="3D Design Dataset for VR Visualization">
+    <img src="ai-generated-8540921_1280.jpg" alt="3D Design Dataset for VR Visualization" width="200" height="300"  >
     <h3>3D Design Dataset for VR Visualization </h3>
   </div></th>
   </th>
