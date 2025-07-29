@@ -31,6 +31,7 @@
     }
     h3{
       color: #7030a0;
+      font-size: 20px;
     }
     h4{
       color: #7030a0;
@@ -81,25 +82,33 @@
   }
 
   .card {
-      max-width: 400px;
+      height: 400px;
+      width: 300px;
+
     
   }
 table{
   display:flex;
   justify-content: center;
-  border-spacing: 0px, 0px, 10px, 10px;
+  border-spacing: 20px;
+  border-collapse:  separate;
 }
   .card img {
-    width: 100%;
+    
     border-radius: 8px;
   }
 
   .card h3 {
     margin-top: 20px;
+    text-align: center;
   }
   .pequeña{
     width: 5%;
     justify-content: center;
+  }
+  td{
+    width: 200px;
+    height: 400px;
   }
 
     .dropdown-container {
@@ -165,30 +174,30 @@ table{
 </div>
 <table>
   <tr>
-  <th>
+  <td>
   <div class="dropdown-container">
     <a href="https://github.com/VERGE-PROJECT/Real-5G-Network-Dataset" class="card-link dropdown-link" >
      <div class="card">
-      <img src="real5g.jpg" alt="Real 5G Network Dataset" width="200" height="300">
+      <img src="real5g.jpg" alt="Real 5G Network Dataset" width="300" height="300">
       <h3>Real 5G Network Dataset</h3>
       <div class="dropdown-description">
       This dataset contains real-time performance metrics from a live 5G network, including KPIs like signal strength, bandwidth, latency, and node reliability.
     </div></a>
   </div></div>
-  </th>
-  <th>
+  </td>
+  <td>
   <div class="dropdown-container">
   <a href="https://github.com/VERGE-PROJECT/GTSI-HITACHI-ODT-dataset" class="card-link dropdown-link" >
   <div class="card">
-    <img src="tram_obstacle2.jpg" alt="Obstacle Detection System Dataset" width="200" height="300">
+    <img src="tram_obstacle2.jpg" alt="Obstacle Detection System Dataset" width="300" height="300">
     <h3>Obstacle Detection System Dataset</h3>
     <div class="dropdown-description">
       This dataset contains data from the obstacle detection system of a tram operating in Florence tramway system equipped with RADAR and LiDAR sensors. The system processes data from these sensors with many complex algorithms to detect and track position and trajectory of many objects standing still or moving in front of tram.    
     </div></a>
     </div>
   </div>
-  </th>
-  <th>
+  </td>
+  <td>
   <div class="dropdown-container">
     <a href="https://github.com/VERGE-PROJECT/GTSI-HITACHI-NGAP-dataset" class="card-link dropdown-link" >
     <div class="card">
@@ -198,61 +207,63 @@ table{
         This dataset contains data from the positioning system of a tram operating in Florence tramway system equipped with a set of sensors (RADAR, inertial measurement unit and GNSS). The system processes sensor data through fusion algorithms and determines the relevant tram position.
       </div></a>
     </div></div>
-  </th>
-  <th>
+  </td>
+  <td>
     <div class="dropdown-container">
   <a href="https://github.com/VERGE-PROJECT/Space-Time-User-Distribution-Dataset" class="card-link dropdown-link">
   <div class="card">
-    <img src="space_time.jpg" alt="Space/Time User Distribution Dataset" width="200" height="300">
+    <img src="space_time.jpg" alt="Space/Time User Distribution Dataset" width="300" height="300">
     <h3>Space/Time User Distribution Dataset</h3></a>
     <div class="dropdown-description">
       This dataset contains measurements of the number of users connected to the Wifi indoor Access Points (APs) deployed in the Campus Nord of UPC in Barcelona. Measurements are given as a function of time covering a total of 62 days. The dataset also includes the information of the theoretical coverage area of each AP, so that the number of users connected to an AP can be associated to a specific geographical area, thus having the user distribution in time and space.
     </div></a>
     </div></div>
-  </th>
-  <th>
+  </td>
+  <tr>
+  <td>
   <div class="dropdown-container">
     <a href="https://github.com/VERGE-PROJECT/PCDataset" class="card-link dropdown-link">
     <div class="card">
-      <img src="realtime video.jpg" alt="Real Time Video Dataset" width="200" height="300">
+      <img src="realtime video.jpg" alt="Real Time Video Dataset" width="300" height="300">
       <h3>Real Time Video Dataset </h3></a>
       <div class="dropdown-description">
         This dataset includes the point cloud of a 3D avatar. The point cloud, produced from FM POINTS, encapsulates the complete Augmented Reality (AR) landscape and written in a PLY file. Originating from a densely packed data set of more than 30,000 individual points, it's subjected to a process of downsampling, wherein it is reduced to a manageable subset of 2,048 distinct points without significantly compromising the overall visual and data integrity of the AR scenery. The ground truth label is represented as the skeleton points of the avatar, which are written into a JSON file. Each skeleton has its own attribute information, including skeleton identification, position, rotation, color, and index number. To ensure effective communication, we use 25 skeletons to represent the avatar we use.
       </div></a>
   </div></div>
-</th>
-</tr>
-<tr>
-  
-  <th>
+</td>
+
+<td>
   <div class="dropdown-container">
     <a href="https://github.com/VERGE-PROJECT/OAI_RAN_KPM_dataset" class="card-link dropdown-link">
     <div class="card">
-      <img src="ran_metrics.png" alt="RAN Dataset" width="200" height="300">
+      <img src="ran_metrics.png" alt="RAN Dataset" width="300" height="300">
       <h3>RAN Dataset</h3></a>
       <div class="dropdown-description">
         This dataset contains Radio Access Network (RAN) metrics in a 5G emulation environment based on OpenAirInterface (OAI). It includes 
       time-series measurements representing network behavior over 5 weeks (~10,080 samples)
       </div></a>
   </div></div>
-  </th>
-  <th>
+  </td>
+  <td>
   <div class="dropdown-container">
     <a href="https://github.com/VERGE-PROJECT/deployed-slicing-testbed-dataset" class="card-link dropdown-link">
     <div class="card">
-     <img src="SlicingTestbed.jpg" alt="Deployed Slicing Testbed Dataset"width="200" height="300">
+     <img src="SlicingTestbed.jpg" alt="Deployed Slicing Testbed Dataset"width="300" height="300">
     <h3>Deployed Slicing Testbed Dataset</h3></a>
     <div class="dropdown-description">This dataset contains data related to the implementation, performance, and optimization of network slicing in 5G networks. Network slicing allows operators to create multiple virtual networks on a shared physical infrastructure, each tailored to specific applications. The dataset includes parameters such as latency, bandwidth, Quality of Service metrics, and resource allocation details
       
     </div>
   </div></div>
-  </th>
-  <th>
-  <div class="card">
-    <img src="3DDesign.jpg" alt="3D Design Dataset for VR Visualization" width="200" height="300"  >
-    <h3>3D Design Dataset for VR Visualization </h3>
-  </div></th>
-  </th>
+  </td>
+  <td>
+  <div class="dropdown-container">
+    <a href="https://github.com/VERGE-PROJECT/3D-Design-Dataset" class="card-link dropdown-link">
+    <div class="card">
+      <img src="3DDesign.jpg" alt="3D Design Dataset for VR Visualization" width="300" height="300"  >
+    <h3>3D Design Dataset for VR Visualization </h3></a>
+    <div class="dropdown-description">This dataset is collected to visualize 3D designs using XR technology on a 5G network infrastructure. Designers can quickly access product 3D design data and technical specifications from the Product Lifecycle Management (PLM) system and perform real-time work on the designs</div>
+  </div></div>
+  </td>
   
 </tr>
 </table>
